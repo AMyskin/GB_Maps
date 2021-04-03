@@ -62,73 +62,165 @@
             filePath = "GB_Maps/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "showMap(_:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7BDBD60-0B1A-4EC9-AAD5-5FB4C791DB82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GB_Maps/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "781F2B3E-5F34-4F88-9421-D8CB34D845A2"
-            shouldBeEnabled = "No"
+            uuid = "3AA8C8B6-A41D-4CE7-ADC5-657C4F98F52D"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GB_Maps/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "logout(_:)"
-            landmarkType = "7">
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "MainViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "3AA8C8B6-A41D-4CE7-ADC5-657C4F98F52D - 28503bbeccc1630b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_Maps.MainViewController.usselesExampleVariable.getter : Swift.String"
+                  moduleName = "GB_Maps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amyskin/Documents/GB_Maps/GB_Maps/Main/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "139">
+               </Location>
+               <Location
+                  uuid = "3AA8C8B6-A41D-4CE7-ADC5-657C4F98F52D - 49d9ec5cdfa27577"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_Maps.MainViewController.usselesExampleVariable.setter : Swift.String"
+                  moduleName = "GB_Maps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amyskin/Documents/GB_Maps/GB_Maps/Main/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "174">
+               </Location>
+               <Location
+                  uuid = "3AA8C8B6-A41D-4CE7-ADC5-657C4F98F52D - d2cff0e4cabc921c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_Maps.MainViewController.usselesExampleVariable.modify : Swift.String"
+                  moduleName = "GB_Maps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amyskin/Documents/GB_Maps/GB_Maps/Main/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "3AA8C8B6-A41D-4CE7-ADC5-657C4F98F52D - b4dd51d0bb91e66d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_Maps.MainViewController.usselesExampleVariable.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "GB_Maps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amyskin/Documents/GB_Maps/GB_Maps/Main/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "3AA8C8B6-A41D-4CE7-ADC5-657C4F98F52D - 4b57a3eed6262b60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_Maps.MainViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GB_Maps.MainViewController"
+                  moduleName = "GB_Maps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amyskin/Documents/GB_Maps/GB_Maps/Main/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "179">
+               </Location>
+               <Location
+                  uuid = "3AA8C8B6-A41D-4CE7-ADC5-657C4F98F52D - 754c0623b2158ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GB_Maps.MainViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GB_Maps.MainViewController&gt;"
+                  moduleName = "GB_Maps"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amyskin/Documents/GB_Maps/GB_Maps/Main/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "117">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6E4EDD42-1551-4D93-AFD6-3B936E8C6C79"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GB_Maps/BaseRouter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "perform(segue:performAction:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FA18E4AD-2440-42DA-BE85-3ACB6A0B4E1D"
+            uuid = "D9037B2A-13C5-4D15-BEE4-82B0E9CBA434"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GB_Maps/BaseRouter.swift"
+            filePath = "GB_Maps/Main/MainViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "prepare(for:sender:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "79AE4FE7-37CA-4DA5-93E8-F0757A13DD35"
-            shouldBeEnabled = "No"
+            uuid = "B7B056FE-576F-49A8-9EB5-10F54FCD0B90"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GB_Maps/BaseRouter.swift"
+            filePath = "GB_Maps/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "perform(segue:performAction:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

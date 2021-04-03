@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="acl-y2-gDO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,21 +21,21 @@
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5J7-LN-rvv">
-                                <rect key="frame" x="16" y="104" width="35" height="30"/>
+                                <rect key="frame" x="16" y="60" width="35" height="30"/>
                                 <state key="normal" title="Стоп"/>
                                 <connections>
                                     <action selector="currentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMg-Ws-IR7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybl-Tq-BVK">
-                                <rect key="frame" x="347" y="104" width="51" height="30"/>
+                                <rect key="frame" x="347" y="60" width="51" height="30"/>
                                 <state key="normal" title="Запись"/>
                                 <connections>
                                     <action selector="recordLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9q-ah-hFF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ime-yO-WL4">
-                                <rect key="frame" x="129" y="104" width="156" height="30"/>
+                                <rect key="frame" x="129" y="60" width="156" height="30"/>
                                 <state key="normal" title="Последний марштрут"/>
                                 <connections>
                                     <action selector="lastroute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N0s-PA-QTT"/>
@@ -69,7 +69,7 @@
         <!--Main View Controller-->
         <scene sceneID="b8X-bo-rid">
             <objects>
-                <viewController id="464-a7-Qpe" customClass="MainViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="464-a7-Qpe" customClass="MainViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bl4-hA-e4B" customClass="MainViewCo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,41 +103,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="crP-Qf-7Ig"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="toMap" id="jE5-AO-wPN"/>
-                        <segue destination="NxM-Cx-PMd" kind="custom" identifier="toLaunch" customClass="RootSegue" customModule="GB_Maps" customModuleProvider="target" id="mS9-RD-l4T"/>
+                        <outlet property="router" destination="6VJ-C1-5NC" id="5Ga-Fm-5J1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1t-fE-eqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="6VJ-C1-5NC" customClass="MainRouter" customModule="GB_Maps" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="600" y="75"/>
-        </scene>
-        <!--Launch-->
-        <scene sceneID="CXK-UP-g37">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Launch" id="NxM-Cx-PMd" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="3pj-qJ-Ama"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xZu-98-XT7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1122" y="-316"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TdY-vH-ZUW">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="acl-y2-gDO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bGF-cZ-KVp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="464-a7-Qpe" kind="relationship" relationship="rootViewController" id="Tbz-sa-bkJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zH3-cl-BcR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-310.14492753623193" y="75"/>
         </scene>
     </scenes>
     <resources>

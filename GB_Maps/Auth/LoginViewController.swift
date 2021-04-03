@@ -14,6 +14,8 @@ class LoginViewController: UIViewController {
         static let password = "123456"
     }
 
+    @IBOutlet weak var router: LoginRouter!
+
     @IBOutlet weak var loginView: UITextField!
     @IBOutlet weak var passwordView: UITextField!
 
@@ -40,4 +42,20 @@ class LoginViewController: UIViewController {
         @IBAction func logout(_ segue: UIStoryboardSegue) {
             UserDefaults.standard.set(false, forKey: "isLogin")
         }
+}
+
+final class LoginRouter: BaseRouter {
+    func toMain() {
+        let controller = UIStoryboard(name: "Main", bundle: nil)
+            .instantiateViewController(MainViewController.self)
+
+        setAsRoot(UINavigationController(rootViewController: controller))
+    }
+
+    func onRecover() {
+        let controller = UIStoryboard(name: "Auth", bundle: nil)
+            .instantiateViewController(RecoveryPasswordViewController.self)
+
+        show(controller)
+    }
 }
