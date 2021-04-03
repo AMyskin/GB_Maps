@@ -13,7 +13,6 @@ import RealmSwift
 class ViewController: UIViewController {
 
     private let coordinate = CLLocationCoordinate2D(latitude: 55.728899, longitude: 37.654048)
-    // Маркер:
     private var marker: GMSMarker?
     private var route: GMSPolyline?
     private var routePath: GMSMutablePath?
@@ -69,8 +68,8 @@ class ViewController: UIViewController {
 
     func addLine() {
         route = GMSPolyline()
-        route?.strokeColor = .red
-        route?.strokeWidth = 5
+        route?.strokeColor = .systemBlue
+        route?.strokeWidth = 2
         routePath = GMSMutablePath()
         route?.map = mapView
     }
@@ -90,22 +89,25 @@ class ViewController: UIViewController {
 
 
     func addLastRoute() {
-        let lastRoute = Route()
+        var lastRoute: [Route] = []
         do {
             let config = Realm.Configuration(deleteRealmIfMigrationNeeded:false)
             let realm = try Realm(configuration: config)
-            print(Realm.Configuration.defaultConfiguration.fileURL!)
-
-
-            realm.beginWrite()
             guard let routePath = routePath else { return }
+
             for i in 0..<routePath.count() {
                 let currentCoordinate = routePath.coordinate(at: i)
-                lastRoute.latitude = currentCoordinate.latitude
-                lastRoute.longitude = currentCoordinate.longitude
-                realm.add(lastRoute)
+                let route = Route()
+                route.latitude = currentCoordinate.latitude
+                route.longitude = currentCoordinate.longitude
+                lastRoute.append(Route(value: route))
             }
-            try realm.commitWrite()
+
+            try realm.write{
+                    realm.deleteAll()
+                    realm.add(lastRoute)
+                }
+
         } catch {
             print(error)
         }
