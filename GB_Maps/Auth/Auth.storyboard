@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="88c-Z8-etN">
+            <objects>
+                <viewController id="3cu-CE-SPS" customClass="LoginViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IGR-W9-Wlm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="yy6-Fy-AU0">
+                                <rect key="frame" x="32" y="297" width="350" height="302"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOR-P7-Uef">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="Y0y-wp-wvr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hNc-7m-Z0z">
+                                        <rect key="frame" x="0.0" y="92" width="350" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcA-7Z-WCr">
+                                        <rect key="frame" x="153" y="184" width="44" height="30"/>
+                                        <state key="normal" title="Войти"/>
+                                        <connections>
+                                            <action selector="login:" destination="3cu-CE-SPS" eventType="touchUpInside" id="2b9-an-fgS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0S-LV-f6b">
+                                        <rect key="frame" x="98" y="272" width="154" height="30"/>
+                                        <state key="normal" title="Восстановить пароль"/>
+                                        <connections>
+                                            <action selector="recovery:" destination="3cu-CE-SPS" eventType="touchUpInside" id="dxn-UQ-r0b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hNc-7m-Z0z" firstAttribute="width" secondItem="kOR-P7-Uef" secondAttribute="width" id="fhy-z2-Nex"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sJe-Hu-Ssk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yy6-Fy-AU0" firstAttribute="centerY" secondItem="IGR-W9-Wlm" secondAttribute="centerY" id="MVv-Xb-gEU"/>
+                            <constraint firstItem="yy6-Fy-AU0" firstAttribute="centerX" secondItem="IGR-W9-Wlm" secondAttribute="centerX" id="h6U-1i-RCT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginView" destination="kOR-P7-Uef" id="7g1-y4-Fo7"/>
+                        <outlet property="passwordView" destination="hNc-7m-Z0z" id="2qV-wv-hKR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5f-gI-Pxr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1843" y="75"/>
+        </scene>
+        <!--Recovery Password View Controller-->
+        <scene sceneID="3hf-JO-0Wc">
+            <objects>
+                <viewController id="jtn-RM-iMk" customClass="RecoveryPasswordViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aTe-c3-hRr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="Uyc-cc-B1n">
+                                <rect key="frame" x="32" y="399.5" width="350" height="97"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OoW-pE-DyG">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="rNS-6B-Sat"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuZ-s2-cgd">
+                                        <rect key="frame" x="98" y="67" width="154" height="30"/>
+                                        <state key="normal" title="Восстановить пароль"/>
+                                        <connections>
+                                            <action selector="recovery:" destination="jtn-RM-iMk" eventType="touchUpInside" id="JHp-hj-6Wy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g5j-zq-A9U"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uyc-cc-B1n" firstAttribute="centerY" secondItem="aTe-c3-hRr" secondAttribute="centerY" id="f95-7R-1yb"/>
+                            <constraint firstItem="Uyc-cc-B1n" firstAttribute="centerX" secondItem="aTe-c3-hRr" secondAttribute="centerX" id="ngd-Mt-VL3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginView" destination="OoW-pE-DyG" id="37G-5W-lHR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X73-In-AVq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
