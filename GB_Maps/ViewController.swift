@@ -67,6 +67,7 @@ class ViewController: UIViewController {
 
 
     func addLine() {
+        route?.map = nil
         route = GMSPolyline()
         route?.strokeColor = .systemBlue
         route?.strokeWidth = 2
