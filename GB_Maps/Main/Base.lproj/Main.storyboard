@@ -102,12 +102,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="crP-Qf-7Ig"/>
-                    <connections>
-                        <outlet property="router" destination="6VJ-C1-5NC" id="5Ga-Fm-5J1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1t-fE-eqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <customObject id="6VJ-C1-5NC" customClass="MainRouter" customModule="GB_Maps" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="600" y="75"/>
         </scene>

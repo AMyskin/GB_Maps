@@ -12,6 +12,8 @@ import RealmSwift
 
 class ViewController: UIViewController {
 
+    var usselesExampleVariable = ""
+
     private let coordinate = CLLocationCoordinate2D(latitude: 55.728899, longitude: 37.654048)
     private var marker: GMSMarker?
     private var route: GMSPolyline?

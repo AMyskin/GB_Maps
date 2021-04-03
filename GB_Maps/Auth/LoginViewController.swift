@@ -14,10 +14,11 @@ class LoginViewController: UIViewController {
         static let password = "123456"
     }
 
-    @IBOutlet weak var router: LoginRouter!
-
     @IBOutlet weak var loginView: UITextField!
     @IBOutlet weak var passwordView: UITextField!
+
+    var onLogin: (() -> Void)?
+    var onRecover: (() -> Void)?
 
 
     @IBAction func login(_ sender: Any) {
@@ -31,31 +32,13 @@ class LoginViewController: UIViewController {
  // Сохраним флаг, показывающий, что мы авторизованы
          UserDefaults.standard.set(true, forKey: "isLogin")
  // Перейдём к главному сценарию
-         performSegue(withIdentifier: "toMain", sender: sender)
+        onLogin?()
     }
 
     @IBAction func recovery(_ sender: Any) {
-        performSegue(withIdentifier: "onRecover", sender: sender)
-    }
+        onRecover?()
 
-    // Unwind segue для выхода автоматически удаляет флаг авторизации
-        @IBAction func logout(_ segue: UIStoryboardSegue) {
-            UserDefaults.standard.set(false, forKey: "isLogin")
-        }
-}
-
-final class LoginRouter: BaseRouter {
-    func toMain() {
-        let controller = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(MainViewController.self)
-
-        setAsRoot(UINavigationController(rootViewController: controller))
-    }
-
-    func onRecover() {
-        let controller = UIStoryboard(name: "Auth", bundle: nil)
-            .instantiateViewController(RecoveryPasswordViewController.self)
-
-        show(controller)
     }
 }
+
+
