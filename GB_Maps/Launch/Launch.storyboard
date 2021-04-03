@@ -19,11 +19,13 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <connections>
+                        <outlet property="router" destination="WO0-La-6iQ" id="obL-vx-UvV"/>
                         <segue destination="zae-Rn-yfG" kind="show" identifier="toAuth" customClass="RootSegue" customModule="GB_Maps" customModuleProvider="target" id="32r-5e-hnT"/>
                         <segue destination="yA3-SS-uv4" kind="show" identifier="toMain" customClass="RootSegue" customModule="GB_Maps" customModuleProvider="target" id="Plr-Pl-vqf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNW-56-37l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="WO0-La-6iQ" customClass="LaunchRouter" customModule="GB_Maps" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="91" y="86"/>
         </scene>
