@@ -13,6 +13,7 @@
 		1B592618261794E5002C2796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B592616261794E5002C2796 /* Main.storyboard */; };
 		1B59261A261794E6002C2796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B592619261794E6002C2796 /* Assets.xcassets */; };
 		1B59261D261794E6002C2796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B59261B261794E6002C2796 /* LaunchScreen.storyboard */; };
+		1BDC933A2617C3D500E6EDB5 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC93392617C3D500E6EDB5 /* Route.swift */; };
 		45DCF15EFB9F91427DE4C12B /* Pods_GB_Maps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E03797C37E0172D8D83314 /* Pods_GB_Maps.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		1B592619261794E6002C2796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B59261C261794E6002C2796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B59261E261794E6002C2796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BDC93392617C3D500E6EDB5 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		40F1996AC85DED3AA936D282 /* Pods-GB_Maps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Maps.release.xcconfig"; path = "Target Support Files/Pods-GB_Maps/Pods-GB_Maps.release.xcconfig"; sourceTree = "<group>"; };
 		8BE50368A946F367151F6617 /* Pods-GB_Maps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Maps.debug.xcconfig"; path = "Target Support Files/Pods-GB_Maps/Pods-GB_Maps.debug.xcconfig"; sourceTree = "<group>"; };
 		C6E03797C37E0172D8D83314 /* Pods_GB_Maps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GB_Maps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,7 @@
 				1B592610261794E5002C2796 /* AppDelegate.swift */,
 				1B592612261794E5002C2796 /* SceneDelegate.swift */,
 				1B592614261794E5002C2796 /* ViewController.swift */,
+				1BDC93392617C3D500E6EDB5 /* Route.swift */,
 				1B592616261794E5002C2796 /* Main.storyboard */,
 				1B592619261794E6002C2796 /* Assets.xcassets */,
 				1B59261B261794E6002C2796 /* LaunchScreen.storyboard */,
@@ -103,6 +106,7 @@
 				1B59260A261794E5002C2796 /* Frameworks */,
 				1B59260B261794E5002C2796 /* Resources */,
 				22DC7005B2A922B66F83DD2F /* [CP] Copy Pods Resources */,
+				2931FE907710C9854B1568DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +180,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GB_Maps/Pods-GB_Maps-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2931FE907710C9854B1568DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GB_Maps/Pods-GB_Maps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GB_Maps/Pods-GB_Maps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GB_Maps/Pods-GB_Maps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C750AE2C70F25BD5C35A51F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B592615261794E5002C2796 /* ViewController.swift in Sources */,
+				1BDC933A2617C3D500E6EDB5 /* Route.swift in Sources */,
 				1B592611261794E5002C2796 /* AppDelegate.swift in Sources */,
 				1B592613261794E5002C2796 /* SceneDelegate.swift in Sources */,
 			);
