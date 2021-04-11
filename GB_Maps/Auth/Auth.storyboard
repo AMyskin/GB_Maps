@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="yy6-Fy-AU0">
-                                <rect key="frame" x="32" y="297" width="350" height="302"/>
+                                <rect key="frame" x="32" y="253" width="350" height="390"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOR-P7-Uef">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
@@ -40,10 +40,17 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0S-LV-f6b">
-                                        <rect key="frame" x="98" y="272" width="154" height="30"/>
-                                        <state key="normal" title="Восстановить пароль"/>
+                                        <rect key="frame" x="120.5" y="272" width="109" height="30"/>
+                                        <state key="normal" title="Забыли пароль"/>
                                         <connections>
                                             <action selector="recovery:" destination="3cu-CE-SPS" eventType="touchUpInside" id="dxn-UQ-r0b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcS-jG-cPf">
+                                        <rect key="frame" x="129" y="360" width="92" height="30"/>
+                                        <state key="normal" title="Регистрация"/>
+                                        <connections>
+                                            <action selector="registration:" destination="3cu-CE-SPS" eventType="touchUpInside" id="VWx-ET-t4L"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -113,6 +120,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X73-In-AVq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="60.869565217391312" y="75"/>
+        </scene>
+        <!--Registration View Controller-->
+        <scene sceneID="bUW-NE-5f5">
+            <objects>
+                <viewController storyboardIdentifier="RegistrationViewController" id="76V-Fs-BlA" customClass="RegistrationViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLP-Hy-0Sz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите новый логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iSh-E8-K7P">
+                                <rect key="frame" x="107" y="164" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="9Lz-e2-Gnc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите новый пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wIe-4o-hRC">
+                                <rect key="frame" x="107" y="223" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn8-zN-Bad">
+                                <rect key="frame" x="107" y="377" width="200" height="30"/>
+                                <state key="normal" title="Создать новый аккаунт"/>
+                                <connections>
+                                    <action selector="createNewAccaunt:" destination="76V-Fs-BlA" eventType="touchUpInside" id="hZb-LS-E9e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k2u-3i-03P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wIe-4o-hRC" firstAttribute="centerX" secondItem="iSh-E8-K7P" secondAttribute="centerX" id="GQ0-0D-3r6"/>
+                            <constraint firstItem="iSh-E8-K7P" firstAttribute="top" secondItem="k2u-3i-03P" secondAttribute="top" constant="120" id="QkE-6g-DNE"/>
+                            <constraint firstItem="Bn8-zN-Bad" firstAttribute="width" secondItem="wIe-4o-hRC" secondAttribute="width" id="UoO-HQ-U4b"/>
+                            <constraint firstItem="wIe-4o-hRC" firstAttribute="top" secondItem="iSh-E8-K7P" secondAttribute="bottom" constant="25" id="gIS-dN-iRL"/>
+                            <constraint firstItem="wIe-4o-hRC" firstAttribute="width" secondItem="iSh-E8-K7P" secondAttribute="width" id="jEg-yZ-fnr"/>
+                            <constraint firstItem="Bn8-zN-Bad" firstAttribute="top" secondItem="wIe-4o-hRC" secondAttribute="bottom" constant="120" id="p8a-Vb-57d"/>
+                            <constraint firstItem="Bn8-zN-Bad" firstAttribute="centerX" secondItem="wIe-4o-hRC" secondAttribute="centerX" id="qzk-D1-Udf"/>
+                            <constraint firstItem="iSh-E8-K7P" firstAttribute="centerX" secondItem="fLP-Hy-0Sz" secondAttribute="centerX" id="w6u-UV-2Gy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nsn-FA-jrj"/>
+                    <connections>
+                        <outlet property="loginTextField" destination="iSh-E8-K7P" id="kcF-Cq-Epa"/>
+                        <outlet property="passwordTextField" destination="wIe-4o-hRC" id="Cb0-NN-GPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMq-a0-ZZL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1019" y="75"/>
         </scene>
     </scenes>
     <resources>

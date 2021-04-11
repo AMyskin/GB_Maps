@@ -24,6 +24,10 @@ final class AuthCoordinator: BaseCoordinator {
             self?.showRecoverModule()
         }
 
+        controller.onRegistration = { [weak self] in
+            self?.showRegistrationModule()
+        }
+
         controller.onLogin = { [weak self] in
             self?.onFinishFlow?()
         }
@@ -36,6 +40,12 @@ final class AuthCoordinator: BaseCoordinator {
     private func showRecoverModule() {
         let controller = UIStoryboard(name: "Auth", bundle: nil)
             .instantiateViewController(RecoveryPasswordViewController.self)
+        rootController?.pushViewController(controller, animated: true)
+    }
+
+    private func showRegistrationModule() {
+        let controller = UIStoryboard(name: "Auth", bundle: nil)
+            .instantiateViewController(RegistrationViewController.self)
         rootController?.pushViewController(controller, animated: true)
     }
 

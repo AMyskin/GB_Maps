@@ -9,21 +9,26 @@ import UIKit
 
 class RecoveryPasswordViewController: UIViewController {
 
+    //MARK: - Constants and Variables
+    let userRepository = UserRepository()
+    
     @IBOutlet weak var loginView: UITextField!
 
         @IBAction func recovery(_ sender: Any) {
             guard
                 let login = loginView.text,
-                login == LoginViewController.Constants.login else {
+                let user = try? userRepository.searchUser(login: login),
+                !user.isEmpty
+            else {
 
                     return
             }
 
-            showPassword()
+            showPassword(user: user)
         }
 
-        private func showPassword() {
-            let alert = UIAlertController(title: "Пароль", message: "123456", preferredStyle: .alert)
+        private func showPassword(user: [User]) {
+            let alert = UIAlertController(title: "Пароль", message: "\(user[0].password)", preferredStyle: .alert)
 
             let ok = UIAlertAction(title: "OK", style: .cancel)
             alert.addAction(ok)

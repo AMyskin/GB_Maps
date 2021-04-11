@@ -24,6 +24,8 @@
 		1B5BC59C2618A57D00FE200B /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */; };
 		1B5BC59F2618A5A400FE200B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */; };
 		1BDC933A2617C3D500E6EDB5 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC93392617C3D500E6EDB5 /* Route.swift */; };
+		1BDE472326237CD500F58B08 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE472226237CD500F58B08 /* UserRepository.swift */; };
+		1BDE472626237E8A00F58B08 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE472526237E8A00F58B08 /* RegistrationViewController.swift */; };
 		45DCF15EFB9F91427DE4C12B /* Pods_GB_Maps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E03797C37E0172D8D83314 /* Pods_GB_Maps.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		1BDC93392617C3D500E6EDB5 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		1BDE472226237CD500F58B08 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		1BDE472526237E8A00F58B08 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		40F1996AC85DED3AA936D282 /* Pods-GB_Maps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Maps.release.xcconfig"; path = "Target Support Files/Pods-GB_Maps/Pods-GB_Maps.release.xcconfig"; sourceTree = "<group>"; };
 		8BE50368A946F367151F6617 /* Pods-GB_Maps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Maps.debug.xcconfig"; path = "Target Support Files/Pods-GB_Maps/Pods-GB_Maps.debug.xcconfig"; sourceTree = "<group>"; };
 		C6E03797C37E0172D8D83314 /* Pods_GB_Maps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GB_Maps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1BDC93392617C3D500E6EDB5 /* Route.swift */,
+				1BDE472226237CD500F58B08 /* UserRepository.swift */,
 				1B5BC56F261881E900FE200B /* User.swift */,
 			);
 			path = Realm;
@@ -116,6 +121,7 @@
 				1B5BC5652618795300FE200B /* LoginViewController.swift */,
 				1B5BC56826187A2D00FE200B /* RecoveryPasswordViewController.swift */,
 				1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */,
+				1BDE472526237E8A00F58B08 /* RegistrationViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -290,7 +296,9 @@
 				1B5BC570261881E900FE200B /* User.swift in Sources */,
 				1B5BC5662618795300FE200B /* LoginViewController.swift in Sources */,
 				1B5BC56926187A2D00FE200B /* RecoveryPasswordViewController.swift in Sources */,
+				1BDE472626237E8A00F58B08 /* RegistrationViewController.swift in Sources */,
 				1B592613261794E5002C2796 /* SceneDelegate.swift in Sources */,
+				1BDE472326237CD500F58B08 /* UserRepository.swift in Sources */,
 				1B5BC59F2618A5A400FE200B /* MainCoordinator.swift in Sources */,
 				1B5BC59C2618A57D00FE200B /* AuthCoordinator.swift in Sources */,
 				1B5BC5992618A52700FE200B /* ApplicationCoordinator.swift in Sources */,
