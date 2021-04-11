@@ -32,10 +32,9 @@ class LoginViewController: UIViewController {
             let password = passwordView.text,
             let user = try? userRepository.compareUserData(login: login, password: password),
             !user.isEmpty
-         else {
-            showTextFields()
-             return
-         }
+        else {
+            return
+        }
  // Сохраним флаг, показывающий, что мы авторизованы
          UserDefaults.standard.set(true, forKey: "isLogin")
  // Перейдём к главному сценарию
@@ -65,8 +64,8 @@ class LoginViewController: UIViewController {
     }
     // скрыть логин и пароль
     @objc func hideTextFields() {
-        self.passwordView.text = "SECURITY"
-        self.loginView.text = "SECURITY"
+        self.passwordView.text = "Пароль"
+        self.loginView.text = "Логин"
         self.passwordView.isSecureTextEntry = false
 
     }
