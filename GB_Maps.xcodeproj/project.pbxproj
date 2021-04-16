@@ -13,7 +13,19 @@
 		1B592618261794E5002C2796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B592616261794E5002C2796 /* Main.storyboard */; };
 		1B59261A261794E6002C2796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B592619261794E6002C2796 /* Assets.xcassets */; };
 		1B59261D261794E6002C2796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B59261B261794E6002C2796 /* LaunchScreen.storyboard */; };
+		1B5BC5662618795300FE200B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC5652618795300FE200B /* LoginViewController.swift */; };
+		1B5BC56926187A2D00FE200B /* RecoveryPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC56826187A2D00FE200B /* RecoveryPasswordViewController.swift */; };
+		1B5BC56C26187AFE00FE200B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC56B26187AFE00FE200B /* MainViewController.swift */; };
+		1B5BC570261881E900FE200B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC56F261881E900FE200B /* User.swift */; };
+		1B5BC5742618854500FE200B /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B5BC5732618854500FE200B /* Auth.storyboard */; };
+		1B5BC59126189F3100FE200B /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC59026189F3100FE200B /* StoryboardIdentifiable.swift */; };
+		1B5BC5962618A4E200FE200B /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC5952618A4E200FE200B /* BaseCoordinator.swift */; };
+		1B5BC5992618A52700FE200B /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC5982618A52700FE200B /* ApplicationCoordinator.swift */; };
+		1B5BC59C2618A57D00FE200B /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */; };
+		1B5BC59F2618A5A400FE200B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */; };
 		1BDC933A2617C3D500E6EDB5 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC93392617C3D500E6EDB5 /* Route.swift */; };
+		1BDE472326237CD500F58B08 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE472226237CD500F58B08 /* UserRepository.swift */; };
+		1BDE472626237E8A00F58B08 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE472526237E8A00F58B08 /* RegistrationViewController.swift */; };
 		45DCF15EFB9F91427DE4C12B /* Pods_GB_Maps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E03797C37E0172D8D83314 /* Pods_GB_Maps.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +38,19 @@
 		1B592619261794E6002C2796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B59261C261794E6002C2796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B59261E261794E6002C2796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B5BC5652618795300FE200B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1B5BC56826187A2D00FE200B /* RecoveryPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordViewController.swift; sourceTree = "<group>"; };
+		1B5BC56B26187AFE00FE200B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1B5BC56F261881E900FE200B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1B5BC5732618854500FE200B /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		1B5BC59026189F3100FE200B /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		1B5BC5952618A4E200FE200B /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		1B5BC5982618A52700FE200B /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		1BDC93392617C3D500E6EDB5 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		1BDE472226237CD500F58B08 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		1BDE472526237E8A00F58B08 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		40F1996AC85DED3AA936D282 /* Pods-GB_Maps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Maps.release.xcconfig"; path = "Target Support Files/Pods-GB_Maps/Pods-GB_Maps.release.xcconfig"; sourceTree = "<group>"; };
 		8BE50368A946F367151F6617 /* Pods-GB_Maps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Maps.debug.xcconfig"; path = "Target Support Files/Pods-GB_Maps/Pods-GB_Maps.debug.xcconfig"; sourceTree = "<group>"; };
 		C6E03797C37E0172D8D83314 /* Pods_GB_Maps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GB_Maps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,16 +89,52 @@
 		1B59260F261794E5002C2796 /* GB_Maps */ = {
 			isa = PBXGroup;
 			children = (
+				1B5BC5772618894100FE200B /* Main */,
+				1B5BC5722618853200FE200B /* Auth */,
 				1B592610261794E5002C2796 /* AppDelegate.swift */,
 				1B592612261794E5002C2796 /* SceneDelegate.swift */,
-				1B592614261794E5002C2796 /* ViewController.swift */,
-				1BDC93392617C3D500E6EDB5 /* Route.swift */,
-				1B592616261794E5002C2796 /* Main.storyboard */,
+				1B5BC56E2618818800FE200B /* Realm */,
 				1B592619261794E6002C2796 /* Assets.xcassets */,
 				1B59261B261794E6002C2796 /* LaunchScreen.storyboard */,
 				1B59261E261794E6002C2796 /* Info.plist */,
+				1B5BC59026189F3100FE200B /* StoryboardIdentifiable.swift */,
+				1B5BC5952618A4E200FE200B /* BaseCoordinator.swift */,
+				1B5BC5982618A52700FE200B /* ApplicationCoordinator.swift */,
 			);
 			path = GB_Maps;
+			sourceTree = "<group>";
+		};
+		1B5BC56E2618818800FE200B /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				1BDC93392617C3D500E6EDB5 /* Route.swift */,
+				1BDE472226237CD500F58B08 /* UserRepository.swift */,
+				1B5BC56F261881E900FE200B /* User.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		1B5BC5722618853200FE200B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1B5BC5732618854500FE200B /* Auth.storyboard */,
+				1B5BC5652618795300FE200B /* LoginViewController.swift */,
+				1B5BC56826187A2D00FE200B /* RecoveryPasswordViewController.swift */,
+				1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */,
+				1BDE472526237E8A00F58B08 /* RegistrationViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1B5BC5772618894100FE200B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1B592616261794E5002C2796 /* Main.storyboard */,
+				1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */,
+				1B5BC56B26187AFE00FE200B /* MainViewController.swift */,
+				1B592614261794E5002C2796 /* ViewController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		C21687C03AC8E84CD3290D1D /* Frameworks */ = {
@@ -154,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5BC5742618854500FE200B /* Auth.storyboard in Resources */,
 				1B59261D261794E6002C2796 /* LaunchScreen.storyboard in Resources */,
 				1B59261A261794E6002C2796 /* Assets.xcassets in Resources */,
 				1B592618261794E5002C2796 /* Main.storyboard in Resources */,
@@ -226,10 +287,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B5BC56C26187AFE00FE200B /* MainViewController.swift in Sources */,
 				1B592615261794E5002C2796 /* ViewController.swift in Sources */,
 				1BDC933A2617C3D500E6EDB5 /* Route.swift in Sources */,
 				1B592611261794E5002C2796 /* AppDelegate.swift in Sources */,
+				1B5BC59126189F3100FE200B /* StoryboardIdentifiable.swift in Sources */,
+				1B5BC5962618A4E200FE200B /* BaseCoordinator.swift in Sources */,
+				1B5BC570261881E900FE200B /* User.swift in Sources */,
+				1B5BC5662618795300FE200B /* LoginViewController.swift in Sources */,
+				1B5BC56926187A2D00FE200B /* RecoveryPasswordViewController.swift in Sources */,
+				1BDE472626237E8A00F58B08 /* RegistrationViewController.swift in Sources */,
 				1B592613261794E5002C2796 /* SceneDelegate.swift in Sources */,
+				1BDE472326237CD500F58B08 /* UserRepository.swift in Sources */,
+				1B5BC59F2618A5A400FE200B /* MainCoordinator.swift in Sources */,
+				1B5BC59C2618A57D00FE200B /* AuthCoordinator.swift in Sources */,
+				1B5BC5992618A52700FE200B /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

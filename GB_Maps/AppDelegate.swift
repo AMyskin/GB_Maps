@@ -14,9 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        GMSServices.provideAPIKey("AIzaSyA-SVaDBkm_CMJ8R5LZ69puADvCNlvMNKs")
-        print(Realm.Configuration.defaultConfiguration.fileURL ?? "")
         return true
     }
 
