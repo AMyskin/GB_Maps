@@ -61,8 +61,8 @@ class RegistrationViewController: UIViewController {
     }
     // скрыть логин и пароль
     @objc func hideTextFields() {
-        self.passwordTextField.text = "SECURITY"
-        self.loginTextField.text = "SECURITY"
+        self.passwordTextField.text = "Пароль"
+        self.loginTextField.text = "Логин"
         self.passwordTextField.isSecureTextEntry = false
 
     }
