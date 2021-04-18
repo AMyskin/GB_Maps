@@ -68,6 +68,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="m7A-lh-lcu"/>
                     <connections>
+                        <outlet property="loginButton" destination="WcA-7Z-WCr" id="S4e-4D-1KL"/>
                         <outlet property="loginView" destination="kOR-P7-Uef" id="7g1-y4-Fo7"/>
                         <outlet property="passwordView" destination="hNc-7m-Z0z" id="2qV-wv-hKR"/>
                     </connections>
