@@ -75,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="KDf-PX-fgO">
-                                <rect key="frame" x="151.5" y="408.5" width="111" height="79"/>
+                                <rect key="frame" x="151.5" y="384" width="111" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGS-4g-zxo">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
@@ -89,6 +89,14 @@
                                         <state key="normal" title="Выйти"/>
                                         <connections>
                                             <action selector="logout:" destination="464-a7-Qpe" eventType="touchUpInside" id="aQU-DC-eD2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldd-CA-EGU">
+                                        <rect key="frame" x="0.0" y="98" width="111" height="30"/>
+                                        <state key="normal" title="Фото"/>
+                                        <connections>
+                                            <action selector="logout:" destination="464-a7-Qpe" eventType="touchUpInside" id="WPs-Mr-byX"/>
+                                            <action selector="takePicture:" destination="464-a7-Qpe" eventType="touchUpInside" id="uSs-lt-NUS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -106,6 +114,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k1t-fE-eqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="600" y="75"/>
+        </scene>
+        <!--Selfy View Controller-->
+        <scene sceneID="Arn-e5-RxP">
+            <objects>
+                <viewController id="XXu-AB-fj9" customClass="SelfyViewController" customModule="GB_Maps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gr4-Lw-tgD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GzZ-V5-f2u">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n1W-AQ-dal"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GzZ-V5-f2u" firstAttribute="top" secondItem="n1W-AQ-dal" secondAttribute="top" id="7jY-Ab-fhy"/>
+                            <constraint firstItem="n1W-AQ-dal" firstAttribute="bottom" secondItem="GzZ-V5-f2u" secondAttribute="bottom" id="WcC-NS-d1V"/>
+                            <constraint firstItem="n1W-AQ-dal" firstAttribute="trailing" secondItem="GzZ-V5-f2u" secondAttribute="trailing" id="a2u-pE-akV"/>
+                            <constraint firstItem="GzZ-V5-f2u" firstAttribute="leading" secondItem="n1W-AQ-dal" secondAttribute="leading" id="efk-ls-d50"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="GzZ-V5-f2u" id="C2V-kN-2DV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZP-IB-uPn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1436" y="-595"/>
         </scene>
     </scenes>
     <resources>

@@ -25,6 +25,8 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Камера</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Всегда</string>
 	<key>NSLocationWhenInUseUsageDescription</key>

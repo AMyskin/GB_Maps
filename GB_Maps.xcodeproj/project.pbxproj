@@ -23,6 +23,8 @@
 		1B5BC5992618A52700FE200B /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC5982618A52700FE200B /* ApplicationCoordinator.swift */; };
 		1B5BC59C2618A57D00FE200B /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */; };
 		1B5BC59F2618A5A400FE200B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */; };
+		1B7D103D2635E16E007D238E /* SelfyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D103C2635E16E007D238E /* SelfyViewController.swift */; };
+		1B7D10412635E38F007D238E /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7D10402635E38F007D238E /* PhotoViewController.swift */; };
 		1B928E5F262C3D6D00030862 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B928E5E262C3D6D00030862 /* LocationManager.swift */; };
 		1BDC933A2617C3D500E6EDB5 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDC93392617C3D500E6EDB5 /* Route.swift */; };
 		1BDE472326237CD500F58B08 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDE472226237CD500F58B08 /* UserRepository.swift */; };
@@ -49,6 +51,8 @@
 		1B5BC5982618A52700FE200B /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		1B5BC59B2618A57D00FE200B /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		1B7D103C2635E16E007D238E /* SelfyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfyViewController.swift; sourceTree = "<group>"; };
+		1B7D10402635E38F007D238E /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		1B928E5E262C3D6D00030862 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1BDC93392617C3D500E6EDB5 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		1BDE472226237CD500F58B08 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				1B5BC59E2618A5A400FE200B /* MainCoordinator.swift */,
 				1B5BC56B26187AFE00FE200B /* MainViewController.swift */,
 				1B592614261794E5002C2796 /* ViewController.swift */,
+				1B7D103C2635E16E007D238E /* SelfyViewController.swift */,
+				1B7D10402635E38F007D238E /* PhotoViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -295,11 +301,13 @@
 				1BDC933A2617C3D500E6EDB5 /* Route.swift in Sources */,
 				1B592611261794E5002C2796 /* AppDelegate.swift in Sources */,
 				1B928E5F262C3D6D00030862 /* LocationManager.swift in Sources */,
+				1B7D10412635E38F007D238E /* PhotoViewController.swift in Sources */,
 				1B5BC59126189F3100FE200B /* StoryboardIdentifiable.swift in Sources */,
 				1B5BC5962618A4E200FE200B /* BaseCoordinator.swift in Sources */,
 				1B5BC570261881E900FE200B /* User.swift in Sources */,
 				1B5BC5662618795300FE200B /* LoginViewController.swift in Sources */,
 				1B5BC56926187A2D00FE200B /* RecoveryPasswordViewController.swift in Sources */,
+				1B7D103D2635E16E007D238E /* SelfyViewController.swift in Sources */,
 				1BDE472626237E8A00F58B08 /* RegistrationViewController.swift in Sources */,
 				1B592613261794E5002C2796 /* SceneDelegate.swift in Sources */,
 				1BDE472326237CD500F58B08 /* UserRepository.swift in Sources */,
