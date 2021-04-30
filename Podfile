@@ -10,5 +10,7 @@ target 'GB_Maps' do
   pod 'GoogleMaps', '4.2.0'
   pod 'GooglePlaces', '4.2.0'
   pod 'RealmSwift', '>= 0.92.3'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 end
